@@ -1,0 +1,3 @@
+Tweeem is a instant messanger like web-based twitter client.
+In this version all comments are on Russian language.
+The core of app is OpenStruct php framework http://github.com/paveli/OpenStructPHP 

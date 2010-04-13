@@ -1,0 +1,128 @@
+/**
+ * Таблица результатов временного теста
+ */
+.timetest,
+.timetest table {margin: 0; padding: 0;}
+.timetest th,
+.timetest td {margin: 0; padding: 1px 4px; text-align: right;}
+
+/**
+ * Шаблон first постраничной навигации
+ */
+.pagination-first span {margin: 0 3px;}
+.pagination-first .current {font-weight: bold;}
+
+/*--------------------------------*/
+
+/**
+ * Общие свойства
+ */
+a {text-decoration: none;}
+/*a:hover {text-decoration: underline;}*/
+
+/**
+ * Документ
+ */
+html, body {height: 100%; overflow: hidden; color: lavender; background-color: black;}
+#doc {width: 100%; height: 100%; margin: 0px; overflow: hidden;}
+#hd, #bd, #ft {width: 100%;}
+
+/**
+ * Header
+ */
+#hd {position: absolute; left: 0; top: 0; min-height: 64px; height: 64px; background-color: orange; z-index: 2;}
+#hd .left {position: absolute; height: 64px; left: 8px; top: 0;}
+#hd .left span {font-size: 28px; font-weight: bold; color: steelblue; line-height: 64px; vertical-align: middle;}
+#hd .center {position: relative; width: 100%; left: 0; top: 8px;}
+#message {height: 20px; margin: 0 auto; text-align: center; line-height: 20px; vertical-align: middle; font-size: 9pt; font-weight: bold; color: steelblue; cursor: default;}
+#hd .right {position: absolute; right: 6px; top: 6px;}
+#logout {font-weight: bold; color: steelblue;}
+#loading {position: absolute; width: 80px; height: 20px; right: 6px; bottom: 6px; border: 1px solid black; background-color: steelblue; visibility: hidden; text-align: center; line-height: 20px; vertical-align: middle; font-size: 9pt; font-weight: bold; color: orange;}
+
+/**
+ * Body
+ */
+#bd {position: relative; height: 100%; overflow: hidden; z-index: 1;}
+
+/**
+ * Footer
+ */
+#ft {position: absolute; min-height: 64px; height: 64px; left: 0; bottom: 0; background-color: steelblue; z-index: 1;}
+#ft .left {position: absolute; height: 64px; left: 8px; top: 0;}
+#ft .left span {font-size: 28px; font-weight: bold; color: orange; line-height: 64px; vertical-align: middle;}
+
+/**
+ * Строка свёрнутых панелей
+ */
+#minimizedContainer {position: absolute; left: 0; bottom: 64px; padding: 0 2px 2px 0; z-index: 0;}
+.minimized {position: relative; float: left; width: 160px; height: 16px; margin: 2px 0 0 2px; border: 2px solid steelblue; background-color: steelblue; overflow: hidden;}
+.minimized span {width: 142px; height: 16px; white-space: nowrap; overflow: hidden; display: block; line-height: 16px; vertical-align: middle; font-weight: bold; font-size: 8pt;}
+.minimized .maximize {position: absolute; right: 2px; top: 2px; width: 12px; height: 12px; cursor:pointer; background-color: lightgreen;}
+
+/**
+ * Параметры панелей
+ */
+.panel.yui-panel {background-color: orange; overflow: hidden; border: 2px solid steelblue; border-top: 0; z-index: 3;}
+.panel.yui-panel .hd {height: 16px; padding: 2px; background-color: steelblue;}
+.panel.yui-panel .hd span {line-height: 16px; vertical-align: middle; font-weight: bold; font-size: 8pt;}
+.panel.yui-panel .bd {position: relative; overflow: auto; padding:0; color: navy;}
+.panel.yui-panel .ft {position: absolute; left: 0; bottom: 0; width: 100%; height: 0px; background-color: steelblue;}
+.panel.yui-panel .ft span {line-height: 16px; vertical-align: middle; font-weight: bold; font-size: 8pt;}
+.panel.yui-panel .container-close {position:absolute; right:2px; top:4px; height:12px; width:12px; cursor:pointer; background-color: gold;}
+.panel.yui-panel .container-minimize {position:absolute; right:2px; top:4px; height:12px; width:12px; cursor:pointer; background-color: lightgreen;}
+.panel.yui-panel .container-minimize.aside {right: 18px;}
+.panel.yui-panel .yui-resize-handle-br {position: absolute; right:0; bottom:0; height: 8px; width: 8px;}
+.yui-panel-container .underlay {position: absolute;top: 0;right: 0;bottom: 0;left: 0;}
+.yui-panel-container.shadow .underlay {top: 3px; bottom: -3px; right: -3px; left: 3px; background-color: black; opacity: .12; filter: alpha(opacity=12);}
+.yui-effect-fade .underlay {display:none;}
+.yui-panel-container.shadow .underlay.yui-force-redraw {padding-bottom: 1px;}
+
+/**
+ * Таймлайн
+ */
+.timeline {position: relative; height: 100%; overflow: auto;}
+.timeline .item {overflow: hidden; position: relative; min-height: 26px; margin: 2px 2px 0 2px; border-bottom: 1px solid dimgray;}
+.timeline .item.last {border-bottom: 0;}
+.timeline .item img {position: absolute; left: 0; top: 0;}
+.timeline .item .text {padding-left: 26px;}
+.timeline .item .text span {font-size: 8pt;}
+.timeline .item .text .name {font-weight: bold;}
+
+/**
+ * Панель обновления таймлайна
+ */
+.update {position: absolute; width: 100%; left: 0; bottom: 0; border-top: 2px solid steelblue; }
+.update .text {position: relative; padding: 8px 58px 8px 8px; margin: 0;}
+.update .text .area {position: relative; width: 100%; height: 50px; margin: 0; padding: 0;}
+.update .text .area textarea {position: absolute; left: 0; top: 0; width: 100%; height: 50px; border: 0; overflow: auto;}
+.update .text .counter {position: absolute; width: 50px; height: 25px; right: 8px; top: 8px; text-align: center; background-color: white; }
+.update .text .counter span {font-size: 16pt; font-weight: bold; line-height: 25px; vertical-align: middle;}
+.update .text .button {position: absolute; width: 50px; height: 25px; right: 8px; top: 33px; text-align: center; background-color: steelblue; font-size: 8pt; font-weight: bold; line-height: 25px; vertical-align: middle; color: orange;}
+.update .text .button.hover {cursor: pointer; color: gold;}
+.update .text .button.disabled {background-color: gray; color: darkgray;}
+.update .text .button.disabled.hover {background-color: gray; color: lightgray;}
+
+/**
+ * Таймлайн чата
+ */
+#chatPanel .bd, .direct.yui-panel .bd {padding-bottom: 68px; overflow: hidden;}
+
+/**
+ * Контакт-лист
+ */
+#listPanel .bd {overflow: hidden;}
+#list {position: relative; height: 100%; overflow: auto; }
+#list .item {position: relative; min-height: 24px; margin: 2px;}
+#list .item.first {margin-top: 2px;}
+#list .item.last {margin-bottom: 2px;}
+#list .item.hover {cursor: pointer; background-color: darkorange;}
+#list .line {height: 1px; overflow: hidden; background-color: dimgray; margin: 2px;}
+#list .item img {position: absolute; left: 0; top: 0;}
+#list .item .text {padding-left: 26px;}
+#list .item .text .name {font-size: 8pt;}
+#list .item .text .screenName {display: none; font-size: 8pt;}
+
+/**
+ * Ошибки в формах
+ */
+.error {color: red;}
